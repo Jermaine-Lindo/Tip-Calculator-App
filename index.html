@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <script  src="script.js"></script>
+  <title>Tip Calculator App</title>
+</head>
+<body>
+
+  <img id="logo" src="/images/logo.svg">
+  <div class="container">
+    <div class="left">
+      <div class="item" id="billselect">
+        <label for="bill" id="bill-label">Bill</label>
+        <img id="dollar-icon" src="/images/icon-dollar.svg">
+        <input id="bill" placeholder="0" type="text" inputmode="numeric" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
+      </div>
+      <div class="item" id="tipselect">
+        Select Tip %
+        <br>
+        <button class="tipbtn" id="tip5%" onclick="tipSelect(5)">5%</button>
+        <button class="tipbtn" id="tip10%" onclick="tipSelect(10)">10%</button>
+        <button class="tipbtn" id="tip15%" onclick="tipSelect(15)">15%</button>
+        <button class="tipbtn" id="tip25%" onclick="tipSelect(25)">25%</button>
+        <button class="tipbtn" id="tip50%" onclick="tipSelect(50)">50%</button>
+        <button class="tipbtn" id="custom" onclick="custom()">Custom</button>
+        <input id="custom-number" placeholder="0" type="text" inputmode="numeric" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
+      </div>
+      <div class="item" id="numberselect">
+        <label for="people" id="people-label">Number of People</label>
+        <img id="person-icon" src="/images/icon-person.svg">
+        <input id="people" placeholder="0" type="text" inputmode="numeric" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
+      </div>
+    </div>
+    <div class="right">
+      <div class="item">
+        Tip Amount 
+        <div class="number" id="tip-amount">$0.00</div>
+        <span class="person">/ person</span>
+      </div>
+      <div class="item">
+        Total <div class="number" id="total">$0.00</div>
+        <span class="person">/ person</span>
+      </div>
+      <div class="item">
+        <button class="reset" id="reset" onclick="reset()">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Coded by <a href="#">Jermaine Lindo</a>.
+    </div>
+  </footer>
+</body>
+</html>
