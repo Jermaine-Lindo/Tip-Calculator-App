@@ -59,8 +59,8 @@ function tipSelect(tipPercent) {
 }
 
 function reset() {
-    document.getElementById("bill").innerHTML = "";
-    document.getElementById("people").innerHTML = "";
+    document.getElementById("bill").value = "";
+    document.getElementById("people").value = "";
     resetButtons();
 }
 

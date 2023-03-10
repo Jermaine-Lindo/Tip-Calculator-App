@@ -20,7 +20,7 @@
       <div class="item" id="billselect">
         <label for="bill" id="bill-label">Bill</label>
         <img id="dollar-icon" src="./images/icon-dollar.svg">
-        <input id="bill" placeholder="0" type="text" inputmode="numeric" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
+        <input id="bill" placeholder="0" type="text" inputmode="decimal" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
       </div>
       <div class="item" id="tipselect">
         Select Tip %
@@ -31,7 +31,7 @@
         <button class="tipbtn" id="tip25%" onclick="tipSelect(25)">25%</button>
         <button class="tipbtn" id="tip50%" onclick="tipSelect(50)">50%</button>
         <button class="tipbtn" id="custom" onclick="custom()">Custom</button>
-        <input id="custom-number" placeholder="0" type="text" inputmode="numeric" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
+        <input id="custom-number" placeholder="0" type="text" inputmode="decimal" pattern="[0-9]+" oninput="update()" onkeypress="return onlyNumberKey(event)">
       </div>
       <div class="item" id="numberselect">
         <label for="people" id="people-label">Number of People</label>
