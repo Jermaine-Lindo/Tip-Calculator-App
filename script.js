@@ -7,7 +7,6 @@ function onlyNumberKey(evt) {
     if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57) && (ASCIICode != 46)){
         return false;
     }
-    console.log(true)
     return true;
 }
 
@@ -62,6 +61,7 @@ function reset() {
     document.getElementById("bill").value = "";
     document.getElementById("people").value = "";
     resetButtons();
+    update();
 }
 
 function custom(){
