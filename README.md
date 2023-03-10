@@ -22,3 +22,7 @@ The app has an optimal layout for each device's screen size.
 I learned how to use the flexible box layout to design responsive layout structures.
 I also learned how to create an application that is able to respond to inputs in real-time and is able to catch any potential bad inputs from the user.
 Building this tip calculator app has given me a solid foundation in using HTML, CSS, and JavaScript to build interactive web applications.
+
+## Links
+
+https://jermaine-lindo.github.io/Tip-Calculator-App/
